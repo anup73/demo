@@ -29,7 +29,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<mysql-connector-j.version>8.0.33</mysql-connector-j.version>
-		<hibernate-version>7.0.10.Final</hibernate-version>
+		<!--<hibernate-version>7.0.10.Final</hibernate-version>-->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -52,11 +52,11 @@
 			<version>${mysql-connector-j.version}</version>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>${hibernate-version}</version> <!-- Replace with the desired version -->
-		</dependency>
+			<version>${hibernate-version}</version> &lt;!&ndash; Replace with the desired version &ndash;&gt;
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>

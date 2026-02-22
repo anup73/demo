@@ -15,6 +15,7 @@ public class LoginRestController {
     public String login(@RequestBody String jsonPayloadMap)
     {
         boolean result = loginService.authenticateUser();
+        System.out.println("Received jsonPayload :"+jsonPayloadMap);
         if(result = true) {
             return "Login successful";
         }else {
