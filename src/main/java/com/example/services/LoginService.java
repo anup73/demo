@@ -8,5 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Service
 public class LoginService {
     public boolean authenticateUser() {
+        return true;
     }
 }

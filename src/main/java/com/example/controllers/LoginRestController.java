@@ -14,6 +14,11 @@ public class LoginRestController {
     public String login(@RequestBody String jsonPayloadMap)
     {
         boolean result = loginService.authenticateUser();
+        if(result = true) {
+            return "Login successful";
+        }else {
+            return "Login failed";
+        }
     }
 
 }
